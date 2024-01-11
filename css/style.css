@@ -1,0 +1,269 @@
+/* root :) */
+:root {
+  --secondary-font: Raleway, sans-serif;
+  --color-nav-element: #ff6c00;
+  --primary-text-color-theme-light: #303030;
+  --primary-text-color-theme-dark: #fff;
+  --secondary-text-color-theme-light: #555;
+  --secondary-text-color-theme-dark: #9da4bd;
+  --third-text-color-theme-dark: rgba(157, 164, 189, 0.6);
+  --suptitle-font-size: 11px;
+  --suptitle-font-weight: 600;
+  --title-font-size: 42px;
+  --title-letter-spacing: 2.1px;
+}
+
+/* body */
+body {
+  font-family: Open Sans, sans-serif;
+  background-color: grey;
+}
+
+/* list */
+ul,
+ol {
+  list-style: none;
+}
+
+/* link */
+a {
+  text-decoration: none;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$ COMPONENTS $$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.btn-booking {
+  color: var(--primary-text-color-theme-dark);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.media-list-link {
+  color: var(--primary-text-color-theme-light);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
+
+.media-list-link:hover,
+.media-list-link:focus {
+  color: var(--color-nav-element);
+}
+
+.suptitle-theme-dark {
+  color: var(--third-text-color-theme-dark);
+  font-size: var(--suptitle-font-size);
+  font-weight: var(--suptitle-font-weight);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.suptitle-theme-light {
+  color: var(--primary-text-color-theme-light);
+  font-size: var(--suptitle-font-size);
+  font-weight: var(--suptitle-font-weight);
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.menu-link {
+  color: var(--primary-text-color-theme-dark);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--color-nav-element);
+}
+
+.header-phone-number {
+  color: var(--primary-text-color-theme-dark);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+.title-theme-light {
+  color: var(--primary-text-color-theme-light);
+  font-family: var(--secondary-font);
+  font-size: var(--title-font-size);
+  line-height: normal;
+  letter-spacing: var(--title-letter-spacing);
+}
+
+.title-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+  font-family: var(--secondary-font);
+  font-size: var(--title-font-size);
+  line-height: normal;
+  letter-spacing: var(--title-letter-spacing);
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HERO $$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.hero-title {
+  color: var(--primary-text-color-theme-dark);
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  line-height: normal;
+  letter-spacing: 3.6px;
+}
+
+.hero-description {
+  color: var(--secondary-text-color-theme-dark);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.about .title-theme-light {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-description-first {
+  color: var(--secondary-text-color-theme-light);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.about-description-second {
+  color: var(--secondary-text-color-theme-light);
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.28px;
+}
+
+.about .btn-booking {
+  color: var(--primary-text-color-theme-light);
+}
+
+.about .btn-booking:hover,
+.about .btn-booking:focus {
+  color: #fff;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$ SERVICES AND PRICES $$$$$$$$$$$$$$$$$$$$$*/
+
+.table-td-left,
+.table-td-right {
+  color: var(--secondary-text-color-theme-dark);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.table-td-right {
+  text-align: right;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ WHY US $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.why-us-item-number {
+  color: var(--primary-text-color-theme-light);
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.why-us-sup {
+  color: #ff6c00;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.why-us-item-text {
+  color: var(--primary-text-color-theme-light);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.why-us-description {
+  color: var(--secondary-text-color-theme-light);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$ OUR BARBERS $$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.barbers-name {
+  color: var(--primary-text-color-theme-light);
+  text-align: center;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.barbers-item-text {
+  color: #ff6c00;
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$ CONTACTS $$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.street {
+  font-weight: 700;
+}
+
+.email {
+  text-decoration-line: underline;
+}
+
+.contacts-link {
+  color: var(--secondary-text-color-theme-dark);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+.contacts-text {
+  color: var(--primary-text-color-theme-dark);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.contacts-text-time {
+  color: var(--secondary-text-color-theme-dark);
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.copyright {
+  color: var(--secondary-text-color-theme-dark);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+}
