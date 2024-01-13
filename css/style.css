@@ -21,34 +21,60 @@
   --title-letter-spacing: 2.1px;
 }
 
-/* body */
+/* Скидання стилів */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+/* BODY */
 body {
   font-family: Open Sans, sans-serif;
   background-color: grey;
 }
 
-/* list */
-ul,
-ol {
-  list-style: none;
-}
+/* CONTAINER */
 
-/* link */
-a {
-  text-decoration: none;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$ COMPONENTS $$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .btn-booking {
   color: var(--primary-text-color-theme-dark);
+  font-family: Open Sans;
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.08px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: inherit;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
 }
 
 .btn-hover:hover,
@@ -75,6 +101,7 @@ a {
   font-weight: var(--suptitle-font-weight);
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .suptitle-theme-light {
@@ -83,9 +110,14 @@ a {
   font-weight: var(--suptitle-font-weight);
   line-height: normal;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.header {
+  padding: 14px 17px 185px 0;
+}
 
 .menu-link {
   color: var(--primary-text-color-theme-dark);
@@ -107,6 +139,7 @@ a {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 1.2px;
+  margin-right: 43px;
 }
 
 .title-theme-light {
@@ -115,6 +148,7 @@ a {
   font-size: var(--title-font-size);
   line-height: normal;
   letter-spacing: var(--title-letter-spacing);
+  margin-bottom: 20px;
 }
 
 .title-theme-dark {
@@ -123,9 +157,14 @@ a {
   font-size: var(--title-font-size);
   line-height: normal;
   letter-spacing: var(--title-letter-spacing);
+  margin-bottom: 44px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HERO $$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.hero {
+  padding: 0 526px 40px 27px;
+}
 
 .hero-title {
   color: var(--primary-text-color-theme-dark);
@@ -133,6 +172,7 @@ a {
   font-size: 72px;
   line-height: normal;
   letter-spacing: 3.6px;
+  margin-bottom: 20px;
 }
 
 .hero-description {
@@ -144,6 +184,10 @@ a {
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
+.about {
+  padding: 138px 100px 120px 0;
+}
+
 .about .title-theme-light {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -154,6 +198,7 @@ a {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  margin-bottom: 20px;
 }
 
 .about-description-second {
@@ -161,6 +206,7 @@ a {
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.28px;
+  margin-bottom: 42px;
 }
 
 .about .btn-booking {
@@ -173,6 +219,18 @@ a {
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$ SERVICES AND PRICES $$$$$$$$$$$$$$$$$$$$$*/
+
+.services-prices {
+  padding: 120px 0;
+}
+
+.services-prices-table-left {
+  padding: 30px 21px 30px 20px;
+}
+
+.services-prices-table-right {
+  padding: 30px 22px 30px 20px;
+}
 
 .table-td-left,
 .table-td-right {
@@ -188,9 +246,14 @@ a {
 
 .services-prices > .btn-booking {
   background-color: #ff6c00;
+  margin-top: 42px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ WHY US $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.why-us {
+  padding: 120px 101px 120px 69px;
+}
 
 .why-us-item-number {
   color: var(--primary-text-color-theme-light);
@@ -226,12 +289,25 @@ a {
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$ OUR BARBERS $$$$$$$$$$$$$$$$$$$$$$$$$*/
 
+.barbers {
+  padding: 120px 0;
+}
+
+.barbers > .title-theme-light {
+  margin-bottom: 42px;
+}
+
+.barbers-img {
+  margin-bottom: 30px;
+}
+
 .barbers-name {
   color: var(--primary-text-color-theme-light);
   text-align: center;
   font-size: 18px;
   line-height: normal;
   letter-spacing: 0.36px;
+  margin-bottom: 8px;
 }
 
 .barbers-item-text {
@@ -240,9 +316,40 @@ a {
   font-size: 14px;
   line-height: normal;
   letter-spacing: 0.28px;
+  margin-bottom: 30px;
+}
+
+/* -$$$$$$$$$$$$$$$$$$$$$$$$$ EXAMPLES $$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.examples {
+  padding: 120px 0;
+}
+
+.examples > .suptitle-theme-light {
+  margin-bottom: 42px;
+}
+
+.examples-title {
+  display: none;
+}
+
+/* booking-contacts */
+
+.booking-contacts {
+  padding: 130px 0 120px;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$ BOOKING $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.booking > .btn-booking {
+  padding: 12px 62px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$ CONTACTS $$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.contacts-div > .title-theme-dark {
+  margin-bottom: 40px;
+}
 
 .street {
   font-weight: 700;
@@ -258,6 +365,11 @@ a {
   font-style: normal;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  display: block;
+}
+
+.contacts-link:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts-text {
@@ -266,6 +378,7 @@ a {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  margin: 70px 0 20px;
 }
 
 .contacts-text-time {
@@ -276,6 +389,14 @@ a {
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.footer {
+  padding: 56px 0 56px 16px;
+}
+
+.footer-title {
+  display: none;
+}
 
 .copyright {
   color: var(--secondary-text-color-theme-dark);
