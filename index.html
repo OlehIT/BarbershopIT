@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <!--$$$$$$$$$$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$-->
-      <header class="header">
+    <!--$$$$$$$$$$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$-->
+    <header class="header">
+      <div class="container">
         <nav class="header-nav">
           <a href="#" class="logo">
             <img src="./images/Logo.svg" alt="Company logo" class="logo-img" />
@@ -44,15 +44,15 @@
         <a href="tel:+380441111111" class="header-phone-number"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="btn-booking btn-hover">
-          Online-booking
-        </button>
-      </header>
-      <!--$$$$$$$$$$$$$$$$$$$$$$ /HEADER $$$$$$$$$$$$$$$$$$$$$$-->
-      <!--$$$$$$$$$$$$$$$$$$$$$$$$ MAIN $$$$$$$$$$$$$$$$$$$$$$$$-->
-      <main>
-        <!--$$$$$$$$$$$$$$$$$$$$$$$ HERO $$$$$$$$$$$$$$$$$$$$$$$-->
-        <section class="hero">
+        <button type="button" class="btn-booking">Online-booking</button>
+      </div>
+    </header>
+    <!--$$$$$$$$$$$$$$$$$$$$$$ /HEADER $$$$$$$$$$$$$$$$$$$$$$-->
+    <!--$$$$$$$$$$$$$$$$$$$$$$$$ MAIN $$$$$$$$$$$$$$$$$$$$$$$$-->
+    <main>
+      <!--$$$$$$$$$$$$$$$$$$$$$$$ HERO $$$$$$$$$$$$$$$$$$$$$$$-->
+      <section class="hero">
+        <div class="container">
           <div class="hero-left-side">
             <ul class="media-list">
               <li class="media-list-item">
@@ -71,28 +71,30 @@
               carefully and with style.
             </p>
           </div>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$$$$$$ /HERO $$$$$$$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$-->
-        <section id="About" class="about">
-          <ul class="about-list">
-            <li class="about-item">
-              <img
-                src="./images/img1(1).jpg"
-                alt="Men's beard haircut"
-                width="270"
-                class="about-img"
-              />
-            </li>
-            <li class="about-item">
-              <img
-                src="./images/img2(2).jpg"
-                alt="Haircut of a man's head"
-                width="270"
-                class="about-img"
-              />
-            </li>
-          </ul>
+        </div>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$$$$$$ /HERO $$$$$$$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$-->
+      <section id="About" class="about container">
+        <ul class="about-list">
+          <li class="about-item">
+            <img
+              src="./images/img1(1).jpg"
+              alt="Men's beard haircut"
+              width="270"
+              class="about-img"
+            />
+          </li>
+          <li class="about-item">
+            <img
+              src="./images/img2(2).jpg"
+              alt="Haircut of a man's head"
+              width="270"
+              class="about-img"
+            />
+          </li>
+        </ul>
+        <div>
           <p class="suptitle-theme-light">About</p>
           <h2 class="title-theme-light">Best Barbershop in your city</h2>
           <p class="about-description-first">
@@ -106,17 +108,19 @@
             the same wave" with clients. Therefore, we are always ready to
             improve everyone who comes to us!
           </p>
-          <button type="button" class="btn-booking btn-hover">
-            ONLINE-BOOKING
-          </button>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$$$$$$ /ABOUT $$$$$$$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$$$$$ SERVICES AND PRICED $$$$$$$$$$$$$$$-->
-        <section id="Services&prices" class="services-prices">
+          <button type="button" class="btn-booking">ONLINE-BOOKING</button>
+        </div>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$$$$$$ /ABOUT $$$$$$$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$$$$$ SERVICES AND PRICED $$$$$$$$$$$$$$$-->
+      <section id="Services&prices" class="services-prices container">
+        <div>
           <p class="suptitle-theme-dark">
             Spend your time with the best masters
           </p>
           <h2 class="title-theme-dark">Services and prices</h2>
+        </div>
+        <div class="tables">
           <table class="services-prices-table-left">
             <tbody class="services-prices-table-left-tbody">
               <tr class="services-prices-table-left-tr">
@@ -157,48 +161,44 @@
               </tr>
             </tbody>
           </table>
-          <button type="button" class="btn-booking">ONLINE-BOOKING</button>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$ /SERVICES&PRICED $$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$$$$$$$$$$$$ WHY US $$$$$$$$$$$$$$$$$$$$$$-->
-        <section class="why-us">
-          <ul class="why-us-list">
-            <li class="why-us-item">
-              <p class="why-us-item-number">
-                600<sup class="why-us-sup">+</sup>
-              </p>
-              <p class="why-us-item-text">Satisfied customers per day</p>
-            </li>
-            <li class="why-us-item">
-              <p class="why-us-item-number">
-                50<sup class="why-us-sup">+</sup>
-              </p>
-              <p class="why-us-item-text">Awards for excellent service</p>
-            </li>
-            <li class="why-us-item">
-              <p class="why-us-item-number">
-                20<sup class="why-us-sup">+</sup>
-              </p>
-              <p class="why-us-item-text">Kyiv’s best barbers</p>
-            </li>
-            <li class="why-us-item">
-              <p class="why-us-item-number">
-                100<sup class="why-us-sup">+</sup>
-              </p>
-              <p class="why-us-item-text">Gifts for regular customers</p>
-            </li>
-          </ul>
+        </div>
+        <button type="button" class="btn-booking">ONLINE-BOOKING</button>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$ /SERVICES&PRICED $$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$$$$$$$$$$$$ WHY US $$$$$$$$$$$$$$$$$$$$$$-->
+      <section class="why-us container">
+        <ul class="why-us-list">
+          <li class="why-us-item">
+            <p class="why-us-item-number">600<sup class="why-us-sup">+</sup></p>
+            <p class="why-us-item-text">Satisfied customers per day</p>
+          </li>
+          <li class="why-us-item">
+            <p class="why-us-item-number">50<sup class="why-us-sup">+</sup></p>
+            <p class="why-us-item-text">Awards for excellent service</p>
+          </li>
+          <li class="why-us-item">
+            <p class="why-us-item-number">20<sup class="why-us-sup">+</sup></p>
+            <p class="why-us-item-text">Kyiv’s best barbers</p>
+          </li>
+          <li class="why-us-item">
+            <p class="why-us-item-number">100<sup class="why-us-sup">+</sup></p>
+            <p class="why-us-item-text">Gifts for regular customers</p>
+          </li>
+        </ul>
+        <div>
           <p class="suptitle-theme-light">Old traditional school</p>
           <h2 class="title-theme-light">¿Why-us people come to us?</h2>
           <p class="why-us-description">
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
           </p>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$$$$$ /WHY US $$$$$$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$$$$$$$$$$$ BARBERS $$$$$$$$$$$$$$$$$$$$$-->
-        <!-- Our barbers -->
-        <section id="Barbers" class="barbers">
+        </div>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$$$$$ /WHY US $$$$$$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$$$$$$$$$$$ BARBERS $$$$$$$$$$$$$$$$$$$$$-->
+      <!-- Our barbers -->
+      <section id="Barbers" class="barbers">
+        <div class="container">
           <p class="suptitle-theme-light">
             For true enjoyers of the atmosphere
           </p>
@@ -337,58 +337,60 @@
               </ul>
             </li>
           </ul>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$$$$$ /BARBERS $$$$$$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$$$$$$$$$$$ EXAMPLES $$$$$$$$$$$$$$$$$$$$$-->
-        <section class="examples">
-          <p class="suptitle-theme-light">In Latin, "barba" means "beard"</p>
-          <h2 class="examples-title">Examples of work</h2>
-          <ul class="examples-list">
-            <li class="examples-item">
-              <img
-                src="./images/rectangle25(1).jpg"
-                alt="An example of a men's haircut"
-                width="270"
-                class="examples-img"
-              />
-            </li>
-            <li class="examples-item">
-              <img
-                src="./images/rectangle26(1).jpg"
-                alt="An example of a men's haircut"
-                width="270"
-                class="examples-img"
-              />
-            </li>
-            <li class="examples-item">
-              <img
-                src="./images/rectangle27(1).jpg"
-                alt="An example of a men's haircut"
-                width="270"
-                class="examples-img"
-              />
-            </li>
-            <li class="examples-item">
-              <img
-                src="./images/rectangle28(1).jpg"
-                alt="An example of a men's haircut"
-                width="270"
-                class="examples-img"
-              />
-            </li>
-          </ul>
-        </section>
-        <!--$$$$$$$$$$$$$$$$$$$$ /EXAMPLES $$$$$$$$$$$$$$$$$$$$-->
-        <!--$$$$$$$$$$$ ONLINE-BOOKING AND CONTACTS $$$$$$$$$$$-->
-        <section class="booking-contacts">
-          <!--$$$$$$$$$$$$$$$$$$$$ BOOKING $$$$$$$$$$$$$$$$$$$$-->
+        </div>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$$$$$ /BARBERS $$$$$$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$$$$$$$$$$$ EXAMPLES $$$$$$$$$$$$$$$$$$$$$-->
+      <section class="examples container">
+        <p class="suptitle-theme-light">In Latin, "barba" means "beard"</p>
+        <h2 class="examples-title">Examples of work</h2>
+        <ul class="examples-list">
+          <li class="examples-item">
+            <img
+              src="./images/rectangle25(1).jpg"
+              alt="An example of a men's haircut"
+              width="270"
+              class="examples-img"
+            />
+          </li>
+          <li class="examples-item">
+            <img
+              src="./images/rectangle26(1).jpg"
+              alt="An example of a men's haircut"
+              width="270"
+              class="examples-img"
+            />
+          </li>
+          <li class="examples-item">
+            <img
+              src="./images/rectangle27(1).jpg"
+              alt="An example of a men's haircut"
+              width="270"
+              class="examples-img"
+            />
+          </li>
+          <li class="examples-item">
+            <img
+              src="./images/rectangle28(1).jpg"
+              alt="An example of a men's haircut"
+              width="270"
+              class="examples-img"
+            />
+          </li>
+        </ul>
+      </section>
+      <!--$$$$$$$$$$$$$$$$$$$$ /EXAMPLES $$$$$$$$$$$$$$$$$$$$-->
+      <!--$$$$$$$$$$$ ONLINE-BOOKING AND CONTACTS $$$$$$$$$$$-->
+      <section class="booking-contacts">
+        <!--$$$$$$$$$$$$$$$$$$$$ BOOKING $$$$$$$$$$$$$$$$$$$$-->
+        <div class="container">
           <div class="booking">
             <h2 class="title-theme-dark">Online-booking</h2>
-            <button type="button" class="btn-booking btn-hover">send</button>
+            <button type="button" class="btn-booking">send</button>
           </div>
           <!--$$$$$$$$$$$$$$$$$$$$ /BOOKING $$$$$$$$$$$$$$$$$$$$-->
           <!--$$$$$$$$$$$$$$$$$$$$ CONTACTS $$$$$$$$$$$$$$$$$$$$-->
-          <div id="Contacts" class="contacts-div">
+          <div id="Contacts" class="contacts">
             <h2 class="title-theme-dark">Contacts</h2>
             <address class="contacts-address">
               <a href="#" class="contacts-link street"
@@ -414,25 +416,25 @@
             <p class="contacts-text">Working hours</p>
             <p class="contacts-text-time">Every day from 9:00 to 22:00</p>
           </div>
-          <!--$$$$$$$$$$$$$$$$$$$ /CONTACTS $$$$$$$$$$$$$$$$$$$-->
-        </section>
-        <!--$$$$$$$$$$$ /ONLINE-BOOKING AND CONTACTS $$$$$$$$$$$-->
-      </main>
-      <!--$$$$$$$$$$$$$$$$$$$$$$$ /MAIN $$$$$$$$$$$$$$$$$$$$$$$-->
-      <!--$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$-->
-      <footer class="footer">
-        <h2 class="footer-title">Bottom of the site</h2>
-        <p class="copyright">&copy; Copyright 2020</p>
-        <ul class="media-list">
-          <li class="media-list-item">
-            <a href="#" class="media-list-link">Instagram</a>
-          </li>
-          <li class="media-list-item">
-            <a href="#" class="media-list-link">Youtube</a>
-          </li>
-        </ul>
-      </footer>
-      <!--$$$$$$$$$$$$$$$$$$$$$$$ /FOOTER $$$$$$$$$$$$$$$$$$$$$$$-->
-    </div>
+        </div>
+        <!--$$$$$$$$$$$$$$$$$$$ /CONTACTS $$$$$$$$$$$$$$$$$$$-->
+      </section>
+      <!--$$$$$$$$$$$ /ONLINE-BOOKING AND CONTACTS $$$$$$$$$$$-->
+    </main>
+    <!--$$$$$$$$$$$$$$$$$$$$$$$ /MAIN $$$$$$$$$$$$$$$$$$$$$$$-->
+    <!--$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$-->
+    <footer class="footer container">
+      <h2 class="footer-title">Bottom of the site</h2>
+      <p class="copyright">&copy; Copyright 2020</p>
+      <ul class="media-list">
+        <li class="media-list-item">
+          <a href="#" class="media-list-link">Instagram</a>
+        </li>
+        <li class="media-list-item">
+          <a href="#" class="media-list-link">Youtube</a>
+        </li>
+      </ul>
+    </footer>
+    <!--$$$$$$$$$$$$$$$$$$$$$$$ /FOOTER $$$$$$$$$$$$$$$$$$$$$$$-->
   </body>
 </html>

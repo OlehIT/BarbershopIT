@@ -50,18 +50,19 @@ img {
 /* BODY */
 body {
   font-family: Open Sans, sans-serif;
-  background-color: grey;
 }
 
-/* CONTAINER */
+/*$$$$$$$$$$$$$$$$$$$$$$$$$ COMPONENTS $$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  outline: 1px solid blue;
 }
-
-/*$$$$$$$$$$$$$$$$$$$$$$$$$ COMPONENTS $$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .btn-booking {
   color: var(--primary-text-color-theme-dark);
@@ -75,11 +76,17 @@ body {
   padding: 12px 20px;
   border-radius: 25px;
   border: 1px solid #ff6c00;
+  background-color: transparent;
 }
 
-.btn-hover:hover,
-.btn-hover:focus {
+.btn-booking:hover,
+.btn-booking:focus {
   background-color: #ff6c00;
+}
+
+.media-list {
+  display: flex;
+  gap: 40px;
 }
 
 .media-list-link {
@@ -113,10 +120,47 @@ body {
   margin-bottom: 20px;
 }
 
+.title-theme-light {
+  color: var(--primary-text-color-theme-light);
+  font-family: var(--secondary-font);
+  font-size: var(--title-font-size);
+  line-height: normal;
+  letter-spacing: var(--title-letter-spacing);
+  margin-bottom: 20px;
+}
+
+.title-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+  font-family: var(--secondary-font);
+  font-size: var(--title-font-size);
+  line-height: normal;
+  letter-spacing: var(--title-letter-spacing);
+  margin-bottom: 44px;
+}
+
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$ HEADER $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .header {
-  padding: 14px 17px 185px 0;
+  padding-top: 14px;
+  padding-bottom: 185px;
+  background-color: grey;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 131px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .menu-link {
@@ -140,30 +184,28 @@ body {
   line-height: normal;
   letter-spacing: 1.2px;
   margin-right: 43px;
+  margin-left: auto;
 }
 
-.title-theme-light {
-  color: var(--primary-text-color-theme-light);
-  font-family: var(--secondary-font);
-  font-size: var(--title-font-size);
-  line-height: normal;
-  letter-spacing: var(--title-letter-spacing);
-  margin-bottom: 20px;
+.header-phone-number:hover,
+.header-phone-number:focus {
+  color: var(--color-nav-element);
 }
 
-.title-theme-dark {
-  color: var(--primary-text-color-theme-dark);
-  font-family: var(--secondary-font);
-  font-size: var(--title-font-size);
-  line-height: normal;
-  letter-spacing: var(--title-letter-spacing);
-  margin-bottom: 44px;
+.header .btn-booking {
+  margin-right: 17px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ HERO $$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .hero {
-  padding: 0 526px 40px 27px;
+  padding-bottom: 40px;
+  background-color: grey;
+}
+
+.hero-right-side {
+  padding-left: 100px;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -180,12 +222,23 @@ body {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  width: 360px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ ABOUT $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .about {
-  padding: 138px 100px 120px 0;
+  padding-top: 138px;
+  padding-bottom: 120px;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 30px;
+}
+
+.about-item:first-child {
+  margin-right: 30px;
 }
 
 .about .title-theme-light {
@@ -199,6 +252,7 @@ body {
   line-height: 1.66;
   letter-spacing: 0.36px;
   margin-bottom: 20px;
+  width: 470px;
 }
 
 .about-description-second {
@@ -207,6 +261,7 @@ body {
   line-height: 1.85;
   letter-spacing: 0.28px;
   margin-bottom: 42px;
+  width: 470px;
 }
 
 .about .btn-booking {
@@ -221,7 +276,16 @@ body {
 /*$$$$$$$$$$$$$$$$$$$$$ SERVICES AND PRICES $$$$$$$$$$$$$$$$$$$$$*/
 
 .services-prices {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: grey;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tables {
+  display: flex;
+  margin-bottom: 42px;
 }
 
 .services-prices-table-left {
@@ -244,15 +308,16 @@ body {
   text-align: right;
 }
 
-.services-prices > .btn-booking {
-  background-color: #ff6c00;
-  margin-top: 42px;
-}
-
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ WHY US $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .why-us {
-  padding: 120px 101px 120px 69px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: flex-start;
+}
+
+.why-us-list {
+  margin-right: 130px;
 }
 
 .why-us-item-number {
@@ -285,16 +350,33 @@ body {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.36px;
+  width: 500px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$ OUR BARBERS $$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .barbers {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #f7f7f7;
 }
 
-.barbers > .title-theme-light {
+.barbers > .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.barbers .title-theme-light {
   margin-bottom: 42px;
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
 }
 
 .barbers-img {
@@ -322,7 +404,10 @@ body {
 /* -$$$$$$$$$$$$$$$$$$$$$$$$$ EXAMPLES $$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 .examples {
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .examples > .suptitle-theme-light {
@@ -333,6 +418,15 @@ body {
   display: none;
 }
 
+.examples-list {
+  display: flex;
+  gap: 30px;
+}
+
+.examples-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+
 /* booking-contacts */
 
 .booking-contacts {
@@ -341,13 +435,24 @@ body {
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$ BOOKING $$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
+.booking-contacts {
+  background-color: grey;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.booking,
+.contacts {
+  width: 100%;
+}
+
 .booking > .btn-booking {
   padding: 12px 62px;
 }
 
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$ CONTACTS $$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
-.contacts-div > .title-theme-dark {
+.contacts > .title-theme-dark {
   margin-bottom: 40px;
 }
 
@@ -391,7 +496,9 @@ body {
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$ FOOTER $$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
 
 .footer {
-  padding: 56px 0 56px 16px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  justify-content: space-between;
 }
 
 .footer-title {
